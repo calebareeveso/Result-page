@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* remove default style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* adding style to the page  */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.h1-1 {
+  font-family: 'Lato', sans-serif;
+  color: #fc4e17;
+  font-weight: 700;
+}
+
+.main {
+  margin-top: 170px;
+  height: 700px;
+}
+
+.result-text {
+  margin-left: 11rem;
+}
+
+/* adding font family to text */
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.range {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 20px;
+  max-width: 100%;
+}
+
+.side-img {
+  position: relative;
+  right: -16px;
+  top: -190px;
+  z-index: -999;
+  overflow: hidden;
+}
+
+@media (max-width: 994px) {
+  .side-img {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .result-text {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-text {
+    margin-left: 0;
+  }
+}
+
+/* loader  */
+#loader {
+  background-color: #fc4e17;
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  transition:all 0.7s ease-in-out;
+}
+/* rotating img  */
+
+#loading {
+  -webkit-animation: rotation 3s infinite linear;
+   animation: rotation 3s infinite linear;
+   position: absolute;
+   left: 1rem;
+   top: 1rem;
+   width: 15rem;
+   height: 15rem;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
